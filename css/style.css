@@ -1,0 +1,129 @@
+/* My Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    background: url('../images/background.png') 40% 100%;
+    color: white;
+}
+
+main {
+    overflow: hidden;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0px 10px 3px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+main:hover {
+    box-shadow: 0 0px 20px 7px rgba(0, 0, 0, 0.12);
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: hsl(204, 43%, 93%);
+}
+
+#join {
+    background-color: white;
+    padding: 35px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#signUp {
+    display: flex;
+}
+
+#signUp>div {
+    height: 230px;
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#signUp div:nth-child(1) {
+    background-color: hsl(179, 62%, 33%);
+}
+
+#whyUs {
+    background-color: hsl(179, 62%, 43%);
+}
+
+#whyUs p {
+    width: 80%;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+#join p:first-of-type {
+    color: hsl(71, 73%, 54%);
+}
+
+#join p:nth-of-type(2) {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+
+#price {
+    font-size: 2em;
+    color: white;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    background-color: hsl(71, 73%, 54%);
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(71, 73%, 40%);
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+    main section:nth-child(2) {
+        flex-direction: column;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    #signUp div {
+        width: 100%;
+    }
+
+    #join {
+        height: 280px;
+        padding-top: 35px;
+    }
+
+    #signUp #whyUs {
+        height: 190px;
+    }
+}
