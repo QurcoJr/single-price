@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Karla', sans-serif;
-    background: url('../images/background.png') 40% 100%;
+    background-color: hsl(204, 43%, 93%);
     color: white;
 }
 
